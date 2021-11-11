@@ -1,1 +1,1 @@
-# DELUXE
+# SNAPCHAT
