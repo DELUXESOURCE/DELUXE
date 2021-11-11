@@ -817,7 +817,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 SourceDELUXEr = start
 else
-Namot = (database:get(bot_id..'Name:Bot') or 'ڤينوم')
+Namot = (database:get(bot_id..'Name:Bot') or 'ديلوكس')
 SourceDELUXEr = '*❈│اهلا عزيزي*\n*❈│انا بوت اسمي '..Namot..'*\n*❈│اختصاصي حمايه الكروبات*\n*❈│من تكرار والسبام والتوجيه والخ…*\n*❈│لتفعيلي اتبع الاخطوات…↓*\n*❈│اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط*\n❈│[قناة سورس البوت](http://t.me/jx8xj)'
 end
 send(msg.chat_id_, msg.id_, SourceDELUXEr) 
@@ -1113,12 +1113,12 @@ end
 if text == 'تحديث السورس ⌁' and DevDELUXEW(msg) then 
 os.execute('rm -rf DELUXE.lua')
 os.execute('wget https://raw.githubusercontent.com/DELUXESOURCE/DELUXE/main/DELUXE.lua')
-send(msg.chat_id_, msg.id_,' *❈│تم تحديث السورس* \n*❈│لديك اخر اصدار لسورس ڤينوم*\n*❈│الاصدار » { 1.0v}*')
+send(msg.chat_id_, msg.id_,' *❈│تم تحديث السورس* \n*❈│لديك اخر اصدار لسورس ديلوكس*\n*❈│الاصدار » { 1.0v}*')
 dofile('DELUXE.lua')  
 end
 if text == 'الاصدار ⌁' and DevDELUXEW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' *❈│اصدار سورس ڤينوم* \n*❈│الاصدار »{ 1.0v}*')
+send(msg.chat_id_, msg.id_,' *❈│اصدار سورس ديلوكس* \n*❈│الاصدار »{ 1.0v}*')
 end
 if text == 'قناه تحديثات البوت ⌁' and DevDELUXEW(msg) then 
 database:del(bot_id..'Srt:Bot') 
@@ -2419,7 +2419,7 @@ return false
 end
 os.execute('rm -rf DELUXE.lua')
 os.execute('wget https://raw.githubusercontent.com/DELUXESOURCE/DELUXE/main/DELUXE.lua')
-send(msg.chat_id_, msg.id_,' *❈│تم تحديث السورس* \n*❈│لديك اخر اصدار لسورس ڤينوم*\n*❈│الاصدار » { 1.0v}*')
+send(msg.chat_id_, msg.id_,' *❈│تم تحديث السورس* \n*❈│لديك اخر اصدار لسورس ديلوكس*\n*❈│الاصدار » { 1.0v}*')
 dofile('DELUXE.lua')  
 end
 
@@ -4007,7 +4007,7 @@ end,nil)
 end
 
 if text == 'الملفات' and DevDELUXEW(msg) then
-t = ' *❈│ملفات السورس ڤينوم ↓*\n*◐•━━━━━━ DL ━━━━━━━•◐* \n'
+t = ' *❈│ملفات السورس ديلوكس ↓*\n*◐•━━━━━━ DL ━━━━━━━•◐* \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
@@ -4024,8 +4024,8 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n *❈│اهلا بك في متجر ملفات ڤينوم*\n*❈│ملفات السورس ↓*\n*◐•━━━━━━ DL ━━━━━━━•◐*\n\n"
-local TextE = "\n*◐•━━━━━━ DL ━━━━━━━•◐*\n *❈│علامة تعني { ✓ } ملف مفعل*\n *❈│علامة تعني { ✘ } ملف معطل*\n *❈│قناة سورس ڤينوم ↓*\n".." *❈│*[اضغط هنا لدخول](t.me/jx8xj) \n"
+local TextS = "\n *❈│اهلا بك في متجر ملفات ديلوكس*\n*❈│ملفات السورس ↓*\n*◐•━━━━━━ DL ━━━━━━━•◐*\n\n"
+local TextE = "\n*◐•━━━━━━ DL ━━━━━━━•◐*\n *❈│علامة تعني { ✓ } ملف مفعل*\n *❈│علامة تعني { ✘ } ملف معطل*\n *❈│قناة سورس ديلوكس ↓*\n".." *❈│*[اضغط هنا لدخول](t.me/jx8xj) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -4063,7 +4063,7 @@ os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
 dofile('DELUXE.lua')  
 else
-send(msg.chat_id_, msg.id_," *❈│عذرا الملف لايدعم سورس ڤينوم* \n") 
+send(msg.chat_id_, msg.id_," *❈│عذرا الملف لايدعم سورس ديلوكس* \n") 
 end
 return false
 end
@@ -4085,7 +4085,7 @@ chek:close()
 send(msg.chat_id_, msg.id_,t) 
 dofile('DELUXE.lua')  
 else
-send(msg.chat_id_, msg.id_," *❈│عذرا الملف لايدعم سورس ڤينوم* \n") 
+send(msg.chat_id_, msg.id_," *❈│عذرا الملف لايدعم سورس ديلوكس* \n") 
 end
 return false
 end
@@ -9020,8 +9020,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'ڤينوم').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'ڤينوم')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'ديلوكس').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'ديلوكس')
 local DELUXE_Msg = {
 'عمغي ??💕.',
 'هاا شتريد كافي ☹️.',
@@ -9863,7 +9863,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'ڤينوم')
+Namebot = (database:get(bot_id..'Name:Bot') or 'ديلوكس')
 send(msg.chat_id_, msg.id_,'*اسمي '..Namebot..'* ')
 end
 if text == 'الاحصائيات' then
@@ -12116,7 +12116,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, '  *❈│تم تفعيل اوامر التحشيش*')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'ڤينوم')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'ديلوكس')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then 
 function FunBot(extra, result, success) 
