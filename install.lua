@@ -69,7 +69,7 @@ RunBot:write([[
 cd $HOME/DELUXE
 token="]]..database:get(Server_Done.."Token_Write")..[["
 rm -fr DELUXE.lua
-wget "https://raw.githubusercontent.com/DELUXE-TEAM/DELUXE/main/DELUXE.lua"
+wget "https://raw.githubusercontent.com/DELUXESOURCE/DELUXE/main/DELUXE.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./DELUXE.lua -p PROFILE --bot=$token
